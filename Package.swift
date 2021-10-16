@@ -2,7 +2,7 @@
 import PackageDescription
 
 let deps: [Target.Dependency] = [
-    "SwiftCLI"
+    "SwiftCLI",
 ]
 
 let package = Package(
@@ -11,7 +11,7 @@ let package = Package(
         .executable(name: "Oned", targets: ["Oned"])
     ],
     dependencies: [
-        .package(url: "https://github.com/jakeheis/SwiftCLI", .upToNextMajor(from: "6.0.3"))
+        .package(url: "https://github.com/jakeheis/SwiftCLI", .upToNextMajor(from: "6.0.3")),
     ],
     targets: [
         .executableTarget(
